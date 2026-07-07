@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --porcelain: #FFFDF7;
+  --onyx: #151313;
+  --hunter: #406343;
+  --palm: #8A9B68;
+  --seafoam: #C1EEFF;
+}
+
+html {
+  background-color: var(--porcelain);
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.navbar {
+  /* border: 1px solid red; */
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  margin-top: 3vh;
+}
+
+.home {
+  /* border: 1px solid red; */
+  margin-top: 20vh;
+  font-family: "Outfit", sans-serif;
+}
+
+.home p {
+  color: var(--hunter);
+}
+
+.home h1 {
+  font-size: 85px;
+  font-weight: 500;
+}
+
+.home h3 {
+  font-size: 18px;
+  width: 75%;
+}
