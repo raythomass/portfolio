@@ -2,6 +2,7 @@
 
 :root {
   --porcelain: #FFFDF7;
+  --cornsilk: #F6F1E9;
   --onyx: #151313;
   --hunter: #406343;
   --palm: #8A9B68;
@@ -28,15 +29,41 @@ html {
 }
 
 .home p {
+  font-size: 16px;
+  font-weight: 500;
   color: var(--hunter);
 }
 
 .home h1 {
-  font-size: 85px;
+  font-size: 95px;
   font-weight: 500;
 }
 
 .home h3 {
   font-size: 18px;
   width: 75%;
+}
+
+.skill-container {
+  /* border: 1px solid red; */
+  margin-top: 8vh;
+}
+
+.skill {
+  /* border: 1px solid blue; */
+  width: 30%;
+  padding: 3vh 2vh 3vh 2vh;
+  border-radius: 1vh;
+  background-color: var(--cornsilk);
+}
+
+.skill p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--hunter);
+  margin-bottom: 1vh;
+}
+
+.skill h2 {
+  font-size: 18px;
 }
