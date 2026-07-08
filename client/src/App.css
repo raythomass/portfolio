@@ -2,10 +2,12 @@
 
 :root {
   --porcelain: #FFFDF7;
-  --cornsilk: #F6F1E9;
-  --onyx: #151313;
+  --cornsilk: #f7f3ec;
+  --onyx: #221C1C;
+  --linework: #e0d5c6;
   --hunter: #406343;
   --palm: #8A9B68;
+  --drysage: #D8DECE;
   --seafoam: #C1EEFF;
 }
 
@@ -13,40 +15,44 @@ html {
   background-color: var(--porcelain);
   margin-left: 15%;
   margin-right: 15%;
+  color: var(--onyx);
+  font-family: "Outfit", sans-serif;
 }
 
 .navbar {
   /* border: 1px solid red; */
   font-family: "Outfit", sans-serif;
   font-size: 16px;
-  margin-top: 3vh;
+  margin-top: 5vh;
 }
 
-.home {
+.intro-section {
   /* border: 1px solid red; */
-  margin-top: 20vh;
+  margin-top: 15vh;
   font-family: "Outfit", sans-serif;
 }
 
-.home p {
+.intro-section p {
   font-size: 16px;
   font-weight: 500;
   color: var(--hunter);
 }
 
-.home h1 {
+.intro-section h1 {
   font-size: 95px;
   font-weight: 500;
 }
 
-.home h3 {
+.intro-section h3 {
   font-size: 18px;
   width: 75%;
 }
 
-.skill-container {
+.skill-section {
   /* border: 1px solid red; */
-  margin-top: 8vh;
+  margin-top: 6vh;
+  padding-bottom: 10vh;
+  border-bottom: 1px solid var(--linework);
 }
 
 .skill {
@@ -66,4 +72,67 @@ html {
 
 .skill h2 {
   font-size: 18px;
+}
+
+.projects-section {
+  margin: 10vh 0vh 10ch 0vh;
+}
+
+.projects-section h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+
+.project {
+  width: 30%;
+  background-color: white;
+  border: 1.5px solid var(--cornsilk);
+  border-radius: 1vh;
+  padding: 1.5vh;
+  margin-top: 5vh;
+}
+
+.project-header {
+  color: var(--hunter);
+  margin-bottom: 1.2vh;
+}
+
+.project-header p {
+  margin: 0vh;
+  padding: 0vh;
+}
+
+.project-details {
+  height: 75%;
+}
+
+.project-details h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.project-details p {
+  margin-bottom: 1.5vh;
+}
+
+.project-software {
+  margin-bottom: 3vh;
+}
+
+.project-software small {
+  background-color: var(--drysage);
+  padding: 0.2vh 1.3vh 0.2vh 1.3vh;
+  border-radius: 5vh;
+  color: var(--hunter);
+}
+
+.project-btns {
+  width: 75%;
+}
+
+.project-btns a {
+  font-weight: 500;
+  color: var(--hunter);
 }
