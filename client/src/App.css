@@ -2,7 +2,7 @@
 
 :root {
   --porcelain: #FFFDF7;
-  --cornsilk: #f7f3ec;
+  --cornsilk: #eee8db;
   --onyx: #221C1C;
   --linework: #e0d5c6;
   --hunter: #406343;
@@ -17,8 +17,8 @@ html {
   margin-right: 15%;
   color: var(--onyx);
   font-family: "Outfit", sans-serif;
+  scroll-behavior: smooth;
 }
-
 .navbar {
   /* border: 1px solid red; */
   font-family: "Outfit", sans-serif;
@@ -75,7 +75,9 @@ html {
 }
 
 .projects-section {
-  margin: 10vh 0vh 10ch 0vh;
+  margin: 10vh 0vh 10vh 0vh;
+  padding-bottom: 10vh;
+  border-bottom: 1px solid var(--linework);
 }
 
 .projects-section h2 {
@@ -135,4 +137,46 @@ html {
 .project-btns a {
   font-weight: 500;
   color: var(--hunter);
+}
+
+.contact-section {
+  margin: 10vh 0vh 10vh 0vh;
+  padding-bottom: 10vh;
+  border-bottom: 1px solid var(--linework);
+}
+
+.contact-section h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2vh;
+}
+
+.contact-link {
+  background-color: white;
+  border: 1.5px solid var(--cornsilk);
+  border-radius: 1vh;
+  padding: 1.5vh;
+}
+
+.contact-link:hover {
+  transform: scale(1.05);
+  background-color: var(--drysage);
+  border: 1.5px solid var(--drysage);
+  transition: transform 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+}
+
+.resume-section {
+  margin: 10vh 0vh 10vh 0vh;
+  padding-bottom: 10vh;
+  border-bottom: 1px solid var(--linework);
+}
+
+.resume-section h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2vh;
 }

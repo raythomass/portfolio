@@ -1,18 +1,21 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
   return (
     <div className='webpage'>
         <Navbar/>
-        <section className='intro-section flex flex-col'>
+        <section id='intro' className='intro-section flex flex-col'>
             <p>◆ Full-Stack Developer & Graphic Designer</p>
             <h1>Raymond Thomas</h1>
             <h3>I'm a full-stack web developer, graphic designer, and educator passionate about creating digital experiences. 
                 With a Bachelor's Degree in Advertising and Graphic Design and a Full-Stack Web Development Certification, 
                 I combine creativity and technology while continuously learning and growing.</h3>
         </section>
-        <section className='skill-section flex justify-between'>
+        <section id='skills' className='skill-section flex justify-between'>
             <div className='skill'>
                 <p>TECHNICAL SKILLS:</p>
                 <h2>HTML • CSS • Javascript • React • Express • MongoDB • MERN</h2>
@@ -26,7 +29,7 @@ export default function Home() {
                 <h2>Photoshop • Illustrator • InDesign • Figma • Premiere Pro • After Effects • Procreate</h2>
             </div>
         </section>
-        <section className='projects-section'>
+        <section id='projects' className='projects-section'>
             <h2>Projects:</h2>
             <div className='projects-container flex flex-wrap justify-between'>
                 <div className='project flex flex-col'>
@@ -113,6 +116,23 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+        </section>
+        <section id='contact' className='contact-section'>
+            <h2>Contact Me:</h2>
+            <div className='contact-link-container flex gap-6'>
+                <a className='contact-link flex gap-2 justify-center items-center' href="https://github.com/raythomass" type='button'>
+                    <FontAwesomeIcon icon={faGithub} />GitHub
+                </a>
+                <a className='contact-link flex gap-2 justify-center items-center' href="https://www.linkedin.com/in/ray-thomas-6b5510163/" type='button'>
+                    <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+                </a>
+                <a className='contact-link flex gap-2 justify-center items-center' href="mailto:rthomas.developer@gmail.com" type='button'>
+                    <FontAwesomeIcon icon={faEnvelope} /> Email
+                </a>
+            </div>
+        </section>
+        <section id='resume' className='resume-section'>
+            <h2>View my Resume:</h2>
         </section>
     </div>
   );
