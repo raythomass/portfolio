@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import resume from '../assets/RaymondThomas_Resume.png'
 
 export default function Home() {
   return (
@@ -133,6 +134,9 @@ export default function Home() {
         </section>
         <section id='resume' className='resume-section'>
             <h2>View my Resume:</h2>
+            <a href={resume} download>
+                <p>Download Resume ➜</p>
+            </a>
         </section>
     </div>
   );
