@@ -180,3 +180,167 @@ html {
   font-weight: 600;
   margin-bottom: 2vh;
 }
+
+.resume-section a {
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--hunter);
+}
+
+
+
+
+
+   /* Tablet Responsive Styles */
+
+@media (max-width: 1024px) {
+
+  html {
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .intro-section {
+    margin-top: 10vh;
+  }
+
+  .intro-section h1 {
+    font-size: 70px;
+  }
+
+  .intro-section h3 {
+    width: 90%;
+  }
+
+  .skill-section {
+    flex-wrap: wrap;
+    gap: 2vh;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .projects-container {
+    gap: 2vh;
+  }
+
+  .project {
+    width: 45%;
+  }
+
+  .project-details {
+    height: auto;
+  }
+
+  .project-btns {
+    width: 100%;
+  }
+}
+
+   /* Mobile Responsive Styles */
+
+@media (max-width: 600px) {
+
+  html {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .navbar {
+    margin-top: 3vh;
+    font-size: 14px;
+  }
+
+  .intro-section {
+    margin-top: 8vh;
+  }
+
+  .intro-section p {
+    font-size: 14px;
+  }
+
+  .intro-section h1 {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .intro-section h3 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+
+  /* Skills */
+  .skill-section {
+    flex-direction: column;
+    gap: 2vh;
+    padding-bottom: 5vh;
+  }
+
+  .skill {
+    width: 100%;
+    padding: 2vh;
+  }
+
+  .skill h2 {
+    font-size: 16px;
+  }
+
+
+  /* Projects */
+  .projects-section {
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+    padding-bottom: 5vh;
+  }
+
+  .projects-section h2,
+  .contact-section h2,
+  .resume-section h2 {
+    font-size: 2rem;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+    margin-top: 3vh;
+  }
+
+  .project-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-details p {
+    font-size: 15px;
+  }
+
+  .project-software {
+    margin-bottom: 2vh;
+  }
+
+
+  /* Contact */
+  .contact-link-container {
+    flex-direction: column;
+    gap: 2vh;
+  }
+
+  .contact-link {
+    width: 100%;
+  }
+
+
+  /* Resume */
+  .resume-section {
+    margin-top: 7vh;
+  }
+
+  .resume-section a {
+    font-size: 18px;
+  }
+}
